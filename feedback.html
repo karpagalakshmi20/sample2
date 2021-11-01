@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cloud Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="styled.css" />
+</head>
+
+<style type="text/css">
+
+    body {
+	background-image: url('f2.jpg');
+    }
+</style>
+<body>
+  
+  <h3>Feedback Form</h3>
+
+  <div>
+   <p>Please provide your valuable feedback!!</p>
+    <input type="text" placeholder="Enter Email Here..." id="email_field">
+   <input type="text" placeholder="Enter feedback Here..." id="text_field">
+   <button id="submit_btn" onclick="storeData()" >Submit feedback</button>
+  </div>
+	<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
+	<script>
+	  // Your web app's Firebase configuration
+	  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	  var firebaseConfig = {
+		apiKey: "AIzaSyBc_gXZ0gIztN5gWd_f29vMC-ssoMZPhRQ",
+		authDomain: "fir-feedback-10c39.firebaseapp.com",
+		projectId: "fir-feedback-10c39",
+		storageBucket: "fir-feedback-10c39.appspot.com",
+		messagingSenderId: "575045364426",
+		appId: "1:575045364426:web:61ed95af609482e982e233",
+		measurementId: "G-XGBJJDY6VH"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	  firebase.analytics();
+	</script>
+  <script src="appd.js"></script>
+</body>
+</html>
+
+
+
